@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchArticles() {
     showLoading();
     try {
-      const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=b094eca832d044669d66545f947ad7dd');
+      const response = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=');
       const data = await response.json();
       hideLoading();
       displayArticles(data.articles);
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function searchArticles(query) {
     showLoading();
     try {
-      const response = await fetch(`https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&apiKey=b094eca832d044669d66545f947ad7dd`);
+      const response = await fetch(`https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&apiKey=`);
       const data = await response.json();
       hideLoading();
       displayArticles(data.articles);
