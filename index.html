@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNews App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">DNews App</div>
+      <button id="theme-toggle"><i class="fas fa-adjust"></i></button>
+    </header>
+    <main>
+      <section class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for news...">
+        <button id="search-button"><i class="fas fa-search"></i></button>
+      </section>
+      <section id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+      </section>
+      <section id="articles" class="articles"></section>
+    </main>
+    <footer>
+      <p>&copy; 2025 DNews App</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
